@@ -12,6 +12,7 @@ public partial class _Default : System.Web.UI.Page
     string connectionstring = (@"Data Source=(localdb)\v11.0;Initial Catalog=employeeportal;Integrated Security=True");
     protected void Page_Load(object sender, EventArgs e)
     {
+        serverdateandtimelbl.Text = DateTime.Now.ToString();
         checklbl.Visible = false;
         notsamelbl.Visible = false;
         Successlbl.Visible = false;
