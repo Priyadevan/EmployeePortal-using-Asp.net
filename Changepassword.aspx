@@ -60,7 +60,7 @@
                         <asp:Label ID="Label4" runat="server" ForeColor="#0033CC" Text="New Password"></asp:Label>
                     </td>
                     <td class="auto-style12">
-                        <asp:TextBox ID="newpwdtxtbox" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="newpwdtxtbox" runat="server" type="password"></asp:TextBox>
                     </td>
                   
                 </tr>
@@ -69,7 +69,7 @@
                         <asp:Label ID="Label5" runat="server" ForeColor="#0033CC" Text="Confirm Passsword"></asp:Label>
                     </td>
                     <td class="auto-style10">
-                        <asp:TextBox ID="confirmpwdtxtbox" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="confirmpwdtxtbox" runat="server" type="password"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="notsamelbl" runat="server" Text="   Old Password and New Password should be same" ForeColor="#990033"></asp:Label>
