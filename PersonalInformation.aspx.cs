@@ -14,8 +14,11 @@ public partial class _Default : System.Web.UI.Page
     {
         serverdateandtimelbl.Text = DateTime.Now.ToString();
         con.Open();
-        SqlCommand cmd = new SqlCommand("sp_profile",con);
+        profileinfo=Session["username"].ToString();
+        SqlCommand cmd = new SqlCommand("sp_profiles",con);
         cmd.CommandType = CommandType.StoredProcedure;
+        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.Parameters.AddWithValue("@uname", profileinfo);
         SqlDataAdapter da = new SqlDataAdapter(cmd);
         DataSet ds = new DataSet();
         da.Fill(ds);
